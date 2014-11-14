@@ -2,15 +2,31 @@ Instructions: Pushing a repo to GIT via GitBash
 
 1. Create repo on Github
 
-2. Open GitBash and type teh following commands
-$ git init
-$ cd "/c/Users/n1wrana/Documents/Git_Workspace/repo""
+2. Open GitBash and type the following commands
+
+Change your working directory to where your files are saved
+cd "/c/Users/n1wrana/Documents/Git_Workspace/repo"
+Makes current directory a GIT repository
+$ git init 
+
+Check the status of the current GIT repository (i.e. files to be commited)
+$ git status
+
+Add version of files to be commited
 $ git add sample_script.R
-$ git remote add origin "https://github.com/nwrana/sample_script.git" ##if not already done so - only need to do this once
-$ git status #checks status of files to be loaded
+
+Commit to changes
+$ git commit -m "insert message to describe changes"
+
+Check remote origin master (where we are pushing versions to)
+$ git remote -v
+
+Change remote origin master if required
+$ git remote rm origin #removes current master
+$ git remote add origin https://github.com/nwrana/sample_script.git
 
 You need to pull down changes from origin respository before pushing any changes 
 $ git pull origin master
 
-$ git commit -m "insert message to describe changes"
-$ git push origin master  
+Push commit to master
+$ git push -u origin master  
