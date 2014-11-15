@@ -8,8 +8,11 @@ using Windows PowerShell
 Change your working directory to where your files are saved
 cd "C:\Users\Nathan\Documents\Github\new location"
 
-list files in new directory 
-ls
+Quick Tip: Navigating directroies in powershell
+cd [hit tab] will cycle through all files in current directory
+cd .. moves 1 level up
+pwd prints working directory
+ls lists files in directory 
 
 Makes current directory a GIT repository
 $ git init 
@@ -34,4 +37,10 @@ You need to pull down changes from origin respository before pushing any changes
 $ git pull origin master
 
 Push commit to master
-$ git push -u origin master  
+$ git push origin master  
+
+Try this if the first one doesn't work, where -u adds changes to currently tracked files
+git push -u origin master  
+
+Exit PowerShell
+Exit
