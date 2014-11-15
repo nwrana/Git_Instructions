@@ -39,11 +39,7 @@ $ git pull origin master
 Push commit to master
 $ git push origin master  
 
-<<<<<<< HEAD
 Try this if the first one doesn't work, where -u adds changes to currently tracked files
-=======
-Try this if the first one doesn't work
->>>>>>> 13b9e9507b128975957d95ec146f868648c96c96
 git push -u origin master  
 
 Exit PowerShell
