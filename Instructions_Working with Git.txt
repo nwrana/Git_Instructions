@@ -1,0 +1,37 @@
+Instructions on How to work with Git and GitHub for version control
+using Windows PowerShell
+
+1. Create repo on Github
+
+2. Open GitBash and type the following commands
+
+Change your working directory to where your files are saved
+cd "C:\Users\Nathan\Documents\Github\new location"
+
+list files in new directory 
+ls
+
+Makes current directory a GIT repository
+$ git init 
+
+Check the status of the current GIT repository (i.e. files to be commited)
+$ git status
+
+Add version of files to be commited
+$ git add sample_script.R
+
+Commit to changes
+$ git commit -m "insert message to describe changes"
+
+Check remote origin master (where we are pushing versions to)
+$ git remote -v
+
+Change remote origin master if required
+$ git remote rm origin #removes current master
+$ git remote add origin https://github.com/nwrana/sample_script.git
+
+You need to pull down changes from origin respository before pushing any changes 
+$ git pull origin master
+
+Push commit to master
+$ git push -u origin master  
