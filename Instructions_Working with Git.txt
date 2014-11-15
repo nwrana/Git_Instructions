@@ -34,4 +34,10 @@ You need to pull down changes from origin respository before pushing any changes
 $ git pull origin master
 
 Push commit to master
-$ git push -u origin master  
+$ git push origin master  
+
+Try this if the first one doesn't work
+git push -u origin master  
+
+Exit PowerShell
+Exit
